@@ -1,0 +1,7 @@
+#!/bin/ash
+
+readonly MAX=$(wc -l $WORDS_FILE | awk '{print $1}')
+
+for i in 1 2 3 4; do
+  <$WORDS_FILE tail -n+$(jot -r 1 1 $MAX) | head -n1
+done | paste -d' ' - - - -
