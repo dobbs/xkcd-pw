@@ -10,5 +10,5 @@ docker run --rm xkcd-password
 
 ### Many Thanks:
 
-http://unix.stackexchange.com/a/241199
-http://stackoverflow.com/questions/6022384/bash-tool-to-get-nth-line-from-a-file#comment34453410_6022431
+* http://unix.stackexchange.com/a/241199
+* http://stackoverflow.com/questions/6022384/bash-tool-to-get-nth-line-from-a-file#comment34453410_6022431
