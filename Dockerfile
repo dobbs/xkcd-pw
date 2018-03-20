@@ -10,4 +10,4 @@ RUN apk update \
  && curl -sS $BASE_URL-long.txt >> $WORDS_FILE \
  && apk del curl
 ADD four-random-words /usr/local/bin
-CMD ["four-random-words"]
+CMD ["sh", "-c", "seq ${COUNT:-5} | xargs -I% four-random-words"]

@@ -3,9 +3,11 @@ https://xkcd.com/936/
 
 ### Usage
 
+Emits five (by default) random passphrases
 ``` bash
 docker build --tag xkcd-password
 docker run --rm xkcd-password
+docker run --rm -e COUNT=8 xkcd-password
 ```
 
 ### Many Thanks:
