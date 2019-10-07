@@ -9,5 +9,5 @@ RUN apk update \
  && curl -sS $BASE_URL-medium.txt > $WORDS_FILE \
  && curl -sS $BASE_URL-long.txt >> $WORDS_FILE \
  && apk del curl
-ADD four-random-words /usr/local/bin
+ADD https://raw.githubusercontent.com/dobbs/xkcd-pw/master/four-random-words /usr/local/bin
 CMD ["sh", "-c", "seq ${COUNT:-5} | xargs -I% four-random-words"]
